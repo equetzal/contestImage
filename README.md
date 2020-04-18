@@ -24,6 +24,7 @@
 <h2 id="screenshots">Screenshots</h2>
 <center><img src="http://enya.codes/gitassets/huronOS/screenshot_desktop.png" width="90%"></center>
 Simple desktop, made to focus in the code. No distractions.
+<br>
 <center><img src="http://enya.codes/gitassets/huronOS/screenshot_clock.png" width="60%"></center>
 The clock is just in the middle of the screen, in competitive programming the time is really important, so the clock have the seconds enabled just for that submissions at the last moment of the contest.
 <center><img src="http://enya.codes/gitassets/huronOS/screenshot_keyboard_setting.png" width="60%"></center>
