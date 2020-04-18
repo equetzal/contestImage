@@ -27,6 +27,7 @@ Simple desktop, made to focus in the code. No distractions.
 <br>
 <center><img src="http://enya.codes/gitassets/huronOS/screenshot_clock.png" width="60%"></center>
 The clock is just in the middle of the screen, in competitive programming the time is really important, so the clock have the seconds enabled just for that submissions at the last moment of the contest.
+<p><br><br></p>
 <center><img src="http://enya.codes/gitassets/huronOS/screenshot_keyboard_setting.png" width="60%"></center>
 The keyboard is so important when coding, so just press Start+Spacebar to change the keyboard distribution, so no problem when someone in the team uses a different distribution. The secondary distribution can be edited and saved in persistent mode. 
 <center><img src="http://enya.codes/gitassets/huronOS/screenshot_terminal_compilers.png" width="60%"></center>
