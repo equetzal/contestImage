@@ -87,6 +87,8 @@
 <dt>Base Operating System</dt>
 <dd>Ubuntu Budgie 18 LTS<br>
 Desktop Enviroment Budgie based on Gnome</dd>
+<dt>Connectivity</dt>
+<dd>All the wireless and wired connections are allowed, with and without DHCP.</dd>
 <dt>Text editors</dt>
 <dd>– Vi<br>
 – Kate<br>
@@ -109,5 +111,42 @@ Desktop Enviroment Budgie based on Gnome</dd>
 – Python 3 (version 3.6.8)<br>
 – Python 2 (version 2.7.15)</dd>
 </dl>
-<h3 id="section"></h3>
+<h3 id="to-do">To do</h3>
+<p>We know that the features may not be implemented in the best way. So we’re open to hear about your contributions or feature ideas.<br>
+Here we have some feature status:</p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled=""> Website Blockers vía host file</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled=""> No sudo</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled=""> su with password</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled=""> Persistent Mode</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled=""> Contest Mode</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Event Mode
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Reset Flag</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Persistent Lapse</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Schedule Contest Mode</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled=""> Custom Blocked Websites</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled=""> Custom Wallpaper</li>
+</ul>
+</li>
+</ul>
+<p>For the second version.</p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> huronOS toolkit for creating custom contestImage ISO</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> huronOS installer</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Contribution system</li>
+</ul>
+<h2 id="credits">Credits</h2>
+<p>The project is holded by the <a href="https://www.facebook.com/algoritmiaescom/">ESCOM-IPN Algorithmic Club</a> and leaded by <a href="https://github.com/equetzal">Enya</a>.</p>
+<p>Other members of the club that helps this project:</p>
+<ul>
+<li><a href="https://github.com/soyoscarrh">Oscar RH</a> helped into the auto-upgradable scripts and custom wallpaper and blocked websites list.</li>
+<li><a href="https://github.com/Begv">Bryan Enrique</a> in the security of the system, to protect it from user modifications during a contest.</li>
+</ul>
+<p>The “huron” image, is propety of the Algorithmic Club and it is registered for copyright, so the club reserves for itself all the rights for the use of the huron image.</p>
+<h2 id="disclaimer">Disclaimer</h2>
+<p>This project is maintained by members of the ESCOM algorithm club, however no official instance is responsible for the use of this project. Being even clearer, neither the Higher Computer School nor the National Polytechnic Institute, as well as any organization of competitions such as ICPC, IOI, etc. It is responsible for the development, security and vulnerabilities of the system.<br>
+The algorithmic club or any of its members is responsible for the use that any user or entity gives to the operating system, so it is free from any guilt given to the use of this system in an official or unofficial contest .</p>
+<p>This contribution of the algorithmic club to the competitive programming community is for educational purposes and healthy competition, hoping that it will be useful to any user or entity that may obtain some benefit for its competitive community with this operating system.</p>
+<h2 id="license">License</h2>
 
