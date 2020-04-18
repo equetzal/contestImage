@@ -137,16 +137,49 @@ Here we have some feature status:</p>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Contribution system</li>
 </ul>
 <h2 id="credits">Credits</h2>
-<p>The project is holded by the <a href="https://www.facebook.com/algoritmiaescom/">ESCOM-IPN Algorithmic Club</a> and leaded by <a href="https://github.com/equetzal">Enya</a>.</p>
-<p>Other members of the club that helps this project:</p>
+<p>The project is maintained <strong>by members</strong> of the <a href="https://www.facebook.com/algoritmiaescom/">ESCOM-IPN Algorithmic Club</a>, this project is actually leaded by <a href="https://github.com/equetzal">Enya</a>.</p>
+<p>These members of the club are envolved with this project:</p>
 <ul>
 <li><a href="https://github.com/soyoscarrh">Oscar RH</a> helped into the auto-upgradable scripts and custom wallpaper and blocked websites list.</li>
 <li><a href="https://github.com/Begv">Bryan Enrique</a> in the security of the system, to protect it from user modifications during a contest.</li>
 </ul>
-<p>The “huron” image, is propety of the Algorithmic Club and it is registered for copyright, so the club reserves for itself all the rights for the use of the huron image.</p>
+<p>The “huron” image, is propety of the Algorithmic Club and it is registered for copyright, so the club reserves for itself all the rights for the use of the huron image. The club allowed us to make use of their name and the hurón character.</p>
 <h2 id="disclaimer">Disclaimer</h2>
-<p>This project is maintained by members of the ESCOM algorithm club, however no official instance is responsible for the use of this project. Being even clearer, neither the Higher Computer School nor the National Polytechnic Institute, as well as any organization of competitions such as ICPC, IOI, etc. It is responsible for the development, security and vulnerabilities of the system.<br>
+<p>This project is maintained <strong>by members</strong> of the ESCOM algorithm club, however no official instance is responsible for the use of this project. Being even clearer, neither the Higher Computer School nor the National Polytechnic Institute, as well as any organization of competitions such as ICPC, IOI, etc. It is responsible for the development, security and vulnerabilities of the system.<br>
 The algorithmic club or any of its members is responsible for the use that any user or entity gives to the operating system, so it is free from any guilt given to the use of this system in an official or unofficial contest .</p>
 <p>This contribution of the algorithmic club to the competitive programming community is for educational purposes and healthy competition, hoping that it will be useful to any user or entity that may obtain some benefit for its competitive community with this operating system.</p>
+<h2 id="download-contestimage">Download contestImage</h2>
+<p><a href="https://correoipn-my.sharepoint.com/:u:/g/personal/egomezr1300_alumno_ipn_mx/EY1JnYoyuVtDt5OUB7r_xuEBgvqmEK4yyZMJQlApRibhbg?e=8RoUhL"><img src="http://enya.codes/gitassets/huronOS/download_from_onedrive.png" width="50%"></a></p>
+<p>Version: 1.1<br>
+Download Password: algoritmiaescom</p>
+<h3 id="instalation-guide">Instalation Guide</h3>
+<dl>
+<dt>Requirements for burning contestImage on a USB:</dt>
+<dd>–A USB 2.0 memory stick of at least 16 GB  <em>(A USB 3.0 would improve performance)</em><br>
+–An ISO image burner program that supports UEFI systems <em>(We suggest rufus or mkusb)</em><br>
+–The ISO of contestImage</dd>
+<dt>Requirements of the device to run contestImage vía USB:</dt>
+<dd>–UEFI boot sequence<br>
+–At least 4 Gb of RAM<br>
+–Secure Boot Enabled</dd>
+</dl>
+<br>
+<dl>
+<dt>Instructions:</dt>
+<dd>
+<ol>
+<li>Download the contestImage ISO <em>(It weighs approximately 7 GB)</em>.</li>
+<li>Connect the USB drive, it must be newly formatted <em>(It does not matter the chosen format)</em></li>
+<li>Open your ISO burner program <em>(We will take RUFUS as a reference)</em></li>
+<li>Select the previously connected USB drive</li>
+<li>Select the downloaded ISO image</li>
+<li>Rufus will automatically select the GPT and UEFI partition system</li>
+<li>The ISO burning process begins.</li>
+<li>Once the process is finished, there will be a USB drive with multiple partitions, its own boot system and with ferrets installed on it ready to be used.</li>
+<li>Now you just have to connect the USB to a shutdown computer, and select the USB as the boot medium.</li>
+<li>You will find a selection screen, we highly recommend using the Live to RAM option for better performance.</li>
+</ol>
+</dd>
+</dl>
 <h2 id="license">License</h2>
 
