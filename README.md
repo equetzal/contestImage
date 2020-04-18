@@ -17,9 +17,9 @@
 </dl>
 <p>Only 1 of these 3 distributions are currently ready to use.</p>
 <ul>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled=""> contestImage</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> installationImage</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> sourceCode</li>
+<li>(x) contestImage</li>
+<li>( ) installationImage</li>
+<li>( ) sourceCode</li>
 </ul>
 <h2 id="screenshots">Screenshots</h2>
 <center><img src="http://enya.codes/gitassets/huronOS/screenshot_desktop.png" width="90%"></center>
@@ -116,26 +116,26 @@ Desktop Enviroment Budgie based on Gnome</dd>
 <p>We are aware the features may not be implemented in the best way, so we’re open to hear about your contributions or feature ideas.<br>
 Here we have some feature status:</p>
 <ul>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled=""> Website Blockers vía host file</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled=""> No sudo</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled=""> su with password</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled=""> Persistent Mode</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled=""> Contest Mode</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Event Mode
+<li>(x) Website Blockers vía host file</li>
+<li>(x) No sudo</li>
+<li>(x) su with password</li>
+<li>(x) Persistent Mode</li>
+<li>(x) Contest Mode</li>
+<li>( ) Event Mode
 <ul>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Reset Flag</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Persistent Lapse</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Schedule Contest Mode</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled=""> Custom Blocked Websites</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled=""> Custom Wallpaper</li>
+<li>( ) Reset Flag</li>
+<li>( ) Persistent Lapse</li>
+<li>( ) Schedule Contest Mode</li>
+<li>(x) Custom Blocked Websites</li>
+<li>(x) Custom Wallpaper</li>
 </ul>
 </li>
 </ul>
 <p>For the second version.</p>
 <ul>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> huronOS toolkit for creating custom contestImage ISO</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> huronOS installer</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Contribution system</li>
+<li>( ) huronOS toolkit for creating custom contestImage ISO</li>
+<li>( ) huronOS installer</li>
+<li>( ) Contribution system</li>
 </ul>
 <h2 id="credits">Credits</h2>
 <p>The project is supported <strong>by members</strong> of the <a href="https://www.facebook.com/algoritmiaescom/">ESCOM-IPN Algorithmic Club</a>, this project is currently is being lead by <a href="https://github.com/equetzal">Enya</a>.</p>
