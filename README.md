@@ -6,12 +6,12 @@
 <h1 id="huronos">huronOS</h1>
 <center><img src="http://enya.codes/gitassets/huronOS/huronOS_logoBlue.png" width="30%"></center>
 <p>Hurón Operating System or “huronOS” is an Ubuntu Budgie fork that contains a set of scripts, configurations, editors, compilers, interpreters and IDES prepared for competitive programming contests such as ICPC, IOI, CodeJam, HackerCup or even training platform contests like Codeforces, HackerRank or TopCoder, etc …</p>
-<p>Currently 3 ways of distributing the operating system are planned:</p>
+<p>Currently there are 3 planned ways of distributing the operating system:</p>
 <dl>
 <dt>contestImage</dt>
 <dd>It is an ISO image of the operating system installed on a USB with the “live to ram” function that allows the system to work at high speed. This image has preconfigured persistence partitions to avoid data loss. It is an image ready to be burned on a USB stick and used in a contest.</dd>
 <dt>installationImage</dt>
-<dd>It is an ISO image that contains an assisted guide to installing the operating system on a computer, just like the installers of other operating systems such as Ubuntu, Debian, Windows or even macOS. This image is prepared for a clean, non-portable installation.</dd>
+<dd>It is an ISO image that contains an assisted guide to install the operating system on a computer, just like the installers of other operating systems such as Ubuntu, Debian, Windows or even macOS. This image is prepared for a clean, non-portable installation.</dd>
 <dt>sourceCode</dt>
 <dd>A free repository for downloading, compiling and modifying the operating system.</dd>
 </dl>
@@ -24,22 +24,22 @@
 <h2 id="screenshots">Screenshots</h2>
 <center><img src="http://enya.codes/gitassets/huronOS/screenshot_desktop.png" width="90%"></center>
 <blockquote>
-<p>Simple desktop, made to focus in the code. No distractions.<br>
+<p>Simple desktop, designed to help the contestant focus in the code. No distractions.<br>
 <br></p>
 </blockquote>
 <center><img src="http://enya.codes/gitassets/huronOS/screenshot_clock.png" width="60%"></center>
 <blockquote>
-<p>The clock is just in the middle of the screen, in competitive programming the time is really important, so the clock have the seconds enabled just for that submissions at the last moment of the contest.<br>
+<p>In competitive programming the time is really important, specially at the final moments of the contest, so the clock is right in the top middle of the screen, and it has the second counter enabled.<br>
 <br></p>
 </blockquote>
 <center><img src="http://enya.codes/gitassets/huronOS/screenshot_keyboard_setting.png" width="60%"></center>
 <blockquote>
-<p>The keyboard is so important when coding, so just press Start+Spacebar to change the keyboard distribution, so no problem when someone in the team uses a different distribution. The secondary distribution can be edited and saved in persistent mode.<br>
+<p>When coding, one of the most important settings is the keyboard distribution, and it’s a very complicated procedure to adjust it manually every time a contestant - that uses a different distribution - wants to change it.  Pressing Start+Spacebar will automatically change the keyboard distribution between the primary and secondary configured ones.<br>
 <br></p>
 </blockquote>
 <center><img src="http://enya.codes/gitassets/huronOS/screenshot_terminal_compilers.png" width="60%"></center>
 <blockquote>
-<p>The terminal is already configured with all the ICPC compilers and interpreters, so you don’t have to worry if the compiler for the language that you use may not be available. Also, the Tilix terminal have multi tab feature that it’s really useful when coding in team.<br>
+<p>The terminal is already configured with all the ICPC compilers and interpreters, so you don’t have to worry if the compiler for the language that you use is not available. Also, the Tilix terminal has multi tab feature that’s really useful when coding as a team.<br>
 <br></p>
 </blockquote>
 <center><img src="http://enya.codes/gitassets/huronOS/screenshot_menu_reference.png" width="60%"></center>
@@ -49,38 +49,39 @@
 </blockquote>
 <center><img src="http://enya.codes/gitassets/huronOS/screenshot_menu_tools.png" width="60%"></center>
 <blockquote>
-<p>The system have some tools that may be useful and do not broke any of the rules of the most common contest like ICPC or IOI, so feel free to use any of them if you need them.<br>
+<p>The system have some tools that are useful and do not break any of the rules of the most common contests like ICPC or IOI, so feel free to use any of them if you need them.<br>
 <br></p>
 </blockquote>
 <center><img src="http://enya.codes/gitassets/huronOS/screenshot_menu_programming.png" width="60%"></center>
 <blockquote>
-<p>The menu have the most popular programming tools that does not broke any competitive rule.<br>
+<p>The menu has the most popular programming tools which don’t break any competitive rule.<br>
 <br></p>
 </blockquote>
 <center><img src="http://enya.codes/gitassets/huronOS/screenshot_desktop_winter.png" width="90%"></center>
 <blockquote>
-<p>Also, the system have an auto-updater (That can be modified) that connect to a specific URL to activate the “Event Mode”, that allows you to change the default wallpaper between other features.<br>
+<p>Also, the system has an auto-updater <em>(which can be modified)</em> that connects to a specific URL in order to activate the “Event Mode”, that allows you to change the default wallpaper among other features.<br>
 <br></p>
 </blockquote>
 <h2 id="features">Features</h2>
 <dl>
 <dt>Website Blockers</dt>
-<dd>The system have a default list of websites and services that are not allowed to access by the contestant, the list can be updated, the feature was implemented vía the host file.</dd>
+<dd>The system has a default list of websites and services that the contestant is not allowed to access; this list can be updated.<br>
+The feature was implemented via the host file.</dd>
 <dt>No sudo</dt>
-<dd>The sudo command was erased to prevent contestants to cheat the host file, or accessing not allowed system files.</dd>
+<dd>The sudo command was erased to prevent contestants from modifying the host file, or accessing not allowed system files.</dd>
 <dt>su with password</dt>
-<dd>In the contestImage the root user have a default password that cannot be changed, in the installationImage, that option will be configurable but obligatory.</dd>
+<dd>In the contestImage the root user has a default password that cannot be changed, in the installationImage, that option will be configurable but obligatory.</dd>
 <dt>Pesistent Mode</dt>
-<dd>The system have a partition that keep the files saved even if the energy goes out, or a non comtemplated events during a contest.</dd>
+<dd>The system has a partition that keeps the files saved even if there’s a power cut, or a non comtemplated event during a contest.</dd>
 <dt>Contest Mode</dt>
-<dd>You can switch between Contest Mode and Upsolving Mode, this mode will enable or disable the Website Blockers list.</dd>
+<dd>You can switch between Contest Mode and Upsolving Mode. This mode will enable or disable the Website Blockers list.</dd>
 <dt>Event Mode</dt>
-<dd>The event mode lets you enable and diasable some features with some files defined in a server url folder. Here are some of the editable features:<br>
-– Reset flag. If you’re using the contestImage cloned into multiple USB sticks, you can define a variable that will reset the system configurations, the editors preferences and will erase all the user-created files in the whole directory. In such way that you don’t have to re-burn all the USB sticks.<br>
-–Persistet lapse. If your event is a trainning camp, you can provide a USB stick with contestImage in it, to let the contestants keep their files save.<br>
-–Schedule Contest Mode. During a camp, you can select during which hours the Contest Mode will be enabled.<br>
-–Custom Blocked Websites. Each event can customise the websites list that they want to block, so the event mode let you create your own.<br>
-–Custom Wallpaper. During an event, you can upload your own wallpaper that it’s going to be used only during the event. In any other case, the huronOS default wallpaper will be displayed.</dd>
+<dd>The event mode lets you enable and diasable some features with a web API. Here are some of the editable features:<br>
+– Reset flag. If you’re using the contestImage cloned into multiple USB sticks, you can define a variable that will reset the system configurations, the editors preferences and will erase all the user-created files in the whole directory, in such way that you don’t have to re-burn all the USB sticks.<br>
+–Persistet lapse. If your event is a trainning camp, you can provide a USB stick with contestImage in it to let the contestants keep their files save.<br>
+–Schedule Contest Mode. During a camp, you can select at which hours will the Contest Mode be enabled.<br>
+–Custom Blocked Websites. Each event can customise the websites they want to block.<br>
+–Custom Wallpaper. During an event, you can upload your own wallpaper so it can be displayed for the lenght of it. If not, the huronOS default wallpaper will be displayed instead.</dd>
 </dl>
 <h2 id="specs">Specs</h2>
 <dl>
@@ -88,7 +89,7 @@
 <dd>Ubuntu Budgie 18 LTS<br>
 Desktop Enviroment Budgie based on Gnome</dd>
 <dt>Connectivity</dt>
-<dd>All the wireless and wired connections are allowed, with and without DHCP.</dd>
+<dd>All the wired and wireless connections are allowed, with and without DHCP.</dd>
 <dt>Text editors</dt>
 <dd>– Vi<br>
 – Kate<br>
@@ -112,7 +113,7 @@ Desktop Enviroment Budgie based on Gnome</dd>
 – Python 2 (version 2.7.15)</dd>
 </dl>
 <h3 id="to-do">To do</h3>
-<p>We know that the features may not be implemented in the best way. So we’re open to hear about your contributions or feature ideas.<br>
+<p>We are aware the features may not be implemented in the best way, so we’re open to hear about your contributions or feature ideas.<br>
 Here we have some feature status:</p>
 <ul>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled=""> Website Blockers vía host file</li>
@@ -137,17 +138,17 @@ Here we have some feature status:</p>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Contribution system</li>
 </ul>
 <h2 id="credits">Credits</h2>
-<p>The project is maintained <strong>by members</strong> of the <a href="https://www.facebook.com/algoritmiaescom/">ESCOM-IPN Algorithmic Club</a>, this project is actually leaded by <a href="https://github.com/equetzal">Enya</a>.</p>
-<p>These members of the club are envolved with this project:</p>
+<p>The project is supported <strong>by members</strong> of the <a href="https://www.facebook.com/algoritmiaescom/">ESCOM-IPN Algorithmic Club</a>, this project is currently is being lead by <a href="https://github.com/equetzal">Enya</a>.</p>
+<p>These members of the club are also envolved with this project:</p>
 <ul>
-<li><a href="https://github.com/soyoscarrh">Oscar RH</a> helped into the auto-upgradable scripts and custom wallpaper and blocked websites list.</li>
-<li><a href="https://github.com/Begv">Bryan Enrique</a> in the security of the system, to protect it from user modifications during a contest.</li>
+<li><a href="https://github.com/soyoscarrh">Oscar RH</a> helps with the auto-upgradable scripts, custom wallpapes and blocked websites list.</li>
+<li><a href="https://github.com/Begv">Bryan Enrique</a> helps with the security of the system, to protect it from user modifications during a contest.</li>
 </ul>
-<p>The “huron” image, is propety of the Algorithmic Club and it is registered for copyright, so the club reserves for itself all the rights for the use of the huron image. The club allowed us to make use of their name and the hurón character.</p>
 <h2 id="disclaimer">Disclaimer</h2>
-<p>This project is maintained <strong>by members</strong> of the ESCOM algorithm club, however no official instance is responsible for the use of this project. Being even clearer, neither the Higher Computer School nor the National Polytechnic Institute, as well as any organization of competitions such as ICPC, IOI, etc. It is responsible for the development, security and vulnerabilities of the system.<br>
-The algorithmic club or any of its members is responsible for the use that any user or entity gives to the operating system, so it is free from any guilt given to the use of this system in an official or unofficial contest .</p>
-<p>This contribution of the algorithmic club to the competitive programming community is for educational purposes and healthy competition, hoping that it will be useful to any user or entity that may obtain some benefit for its competitive community with this operating system.</p>
+<p>This project is supported <strong>by members</strong> of the ESCOM algorithm club, however, no official instances (this includes the Superior School of Computer Sciences, the National Polytechnic Institute, as well as any competition organizations such as ICPC, IOI, etc.) are responsible for the use nor the development, security and vulnerabilities of the system of this project.<br>
+The algorithmic club or any of its members is not responsible for the use that any user or entity gives to the operating system, so it is free from any guilt given to the use of this system in an official or unofficial contest.</p>
+<p>This contribution of the algorithmic club to the competitive programming community is for educational purposes and healthy competition only, hoping that it will be useful to any user or entity that may obtain some benefit for its competitive community from it.</p>
+<p>The “huron” image and its variants, is property of the Algorithmic Club and it is registered for copyright, so the club reserves for itself all the rights of use of the huron image. The club allowed us to make use of their name and the huron character.</p>
 <h2 id="download-contestimage">Download contestImage</h2>
 <p><a href="https://correoipn-my.sharepoint.com/:u:/g/personal/egomezr1300_alumno_ipn_mx/EY1JnYoyuVtDt5OUB7r_xuEBgvqmEK4yyZMJQlApRibhbg?e=8RoUhL" target="_blank"> <img src="http://enya.codes/gitassets/huronOS/download_from_onedrive.png" width="50%"></a></p>
 <p>Version: 1.1<br>
@@ -175,7 +176,7 @@ Download Password: algoritmiaescom</p>
 <li>Select the downloaded ISO image</li>
 <li>Rufus will automatically select the GPT and UEFI partition system</li>
 <li>The ISO burning process begins.</li>
-<li>Once the process is finished, there will be a USB drive with multiple partitions, its own boot system and with ferrets installed on it ready to be used.</li>
+<li>Once the process is finished, there will be a USB drive with multiple partitions, its own boot system and with huronOS installed on it ready to be used.</li>
 <li>Now you just have to connect the USB to a shutdown computer, and select the USB as the boot medium.</li>
 <li>You will find a selection screen, we highly recommend using the Live to RAM option for better performance.</li>
 </ol>
