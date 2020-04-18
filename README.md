@@ -149,7 +149,7 @@ Here we have some feature status:</p>
 The algorithmic club or any of its members is responsible for the use that any user or entity gives to the operating system, so it is free from any guilt given to the use of this system in an official or unofficial contest .</p>
 <p>This contribution of the algorithmic club to the competitive programming community is for educational purposes and healthy competition, hoping that it will be useful to any user or entity that may obtain some benefit for its competitive community with this operating system.</p>
 <h2 id="download-contestimage">Download contestImage</h2>
-<p><a href="https://correoipn-my.sharepoint.com/:u:/g/personal/egomezr1300_alumno_ipn_mx/EY1JnYoyuVtDt5OUB7r_xuEBgvqmEK4yyZMJQlApRibhbg?e=8RoUhL"><img src="http://enya.codes/gitassets/huronOS/download_from_onedrive.png" width="50%"></a></p>
+<p><a href="https://correoipn-my.sharepoint.com/:u:/g/personal/egomezr1300_alumno_ipn_mx/EY1JnYoyuVtDt5OUB7r_xuEBgvqmEK4yyZMJQlApRibhbg?e=8RoUhL" target="_blank"> <img src="http://enya.codes/gitassets/huronOS/download_from_onedrive.png" width="50%"></a></p>
 <p>Version: 1.1<br>
 Download Password: algoritmiaescom</p>
 <h3 id="instalation-guide">Instalation Guide</h3>
