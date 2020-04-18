@@ -23,29 +23,45 @@
 </ul>
 <h2 id="screenshots">Screenshots</h2>
 <center><img src="http://enya.codes/gitassets/huronOS/screenshot_desktop.png" width="90%"></center>
-Simple desktop, made to focus in the code. No distractions.
-<br><br>
+<blockquote>
+<p>Simple desktop, made to focus in the code. No distractions.<br>
+<br></p>
+</blockquote>
 <center><img src="http://enya.codes/gitassets/huronOS/screenshot_clock.png" width="60%"></center>
-The clock is just in the middle of the screen, in competitive programming the time is really important, so the clock have the seconds enabled just for that submissions at the last moment of the contest.
-<br><br>
+<blockquote>
+<p>The clock is just in the middle of the screen, in competitive programming the time is really important, so the clock have the seconds enabled just for that submissions at the last moment of the contest.<br>
+<br></p>
+</blockquote>
 <center><img src="http://enya.codes/gitassets/huronOS/screenshot_keyboard_setting.png" width="60%"></center>
-The keyboard is so important when coding, so just press Start+Spacebar to change the keyboard distribution, so no problem when someone in the team uses a different distribution. The secondary distribution can be edited and saved in persistent mode. 
-<br><br>
+<blockquote>
+<p>The keyboard is so important when coding, so just press Start+Spacebar to change the keyboard distribution, so no problem when someone in the team uses a different distribution. The secondary distribution can be edited and saved in persistent mode.<br>
+<br></p>
+</blockquote>
 <center><img src="http://enya.codes/gitassets/huronOS/screenshot_terminal_compilers.png" width="60%"></center>
-The terminal is already configured with all the ICPC compilers and interpreters, so you don't have to worry if the compiler for the language that you use may not be available. Also, the Tilix terminal have multi tab feature that it's really useful when coding in team. 
-<br><br>
+<blockquote>
+<p>The terminal is already configured with all the ICPC compilers and interpreters, so you don’t have to worry if the compiler for the language that you use may not be available. Also, the Tilix terminal have multi tab feature that it’s really useful when coding in team.<br>
+<br></p>
+</blockquote>
 <center><img src="http://enya.codes/gitassets/huronOS/screenshot_menu_reference.png" width="60%"></center>
-All the langs official references are available offline, so you can check them at any time. 
-<br><br>
+<blockquote>
+<p>All the langs official references are available offline, so you can check them at any time.<br>
+<br></p>
+</blockquote>
 <center><img src="http://enya.codes/gitassets/huronOS/screenshot_menu_tools.png" width="60%"></center>
-The system have some tools that may be useful and do not broke any of the rules of the most common contest like ICPC or IOI, so feel free to use any of them if you need them. 
-<br><br>
+<blockquote>
+<p>The system have some tools that may be useful and do not broke any of the rules of the most common contest like ICPC or IOI, so feel free to use any of them if you need them.<br>
+<br></p>
+</blockquote>
 <center><img src="http://enya.codes/gitassets/huronOS/screenshot_menu_programming.png" width="60%"></center>
-The menu have the most popular programming tools that does not broke any competitive rule. 
-<br><br>
+<blockquote>
+<p>The menu have the most popular programming tools that does not broke any competitive rule.<br>
+<br></p>
+</blockquote>
 <center><img src="http://enya.codes/gitassets/huronOS/screenshot_desktop_winter.png" width="90%"></center>
-Also, the system have an auto-updater (That can be modified) that connect to a specific URL to activate the "Event Mode", that allows you to change the default wallpaper between other features.
-<br><br>
+<blockquote>
+<p>Also, the system have an auto-updater (That can be modified) that connect to a specific URL to activate the “Event Mode”, that allows you to change the default wallpaper between other features.<br>
+<br></p>
+</blockquote>
 <h2 id="features">Features</h2>
 <dl>
 <dt>Website Blockers</dt>
