@@ -1,0 +1,6 @@
+Archive: bionic
+Version: 18.04
+Component: restricted
+Origin: Ubuntu
+Label: Ubuntu
+Architecture: amd64

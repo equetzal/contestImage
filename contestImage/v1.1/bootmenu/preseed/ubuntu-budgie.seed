@@ -1,0 +1,8 @@
+# Install the Ubuntu Budgie desktop.
+tasksel	tasksel/first	multiselect ubuntu-budgie-desktop
+# On live DVDs, don't spend huge amounts of time removing substantial
+# application packages pulled in by language packs. Given that we clearly
+# have the space to include them on the DVD, they're useful and we might as
+# well keep them installed.
+#ubiquity	ubiquity/keep-installed	string icedtea6-plugin openoffice.org
+d-i  base-installer/kernel/altmeta   string hwe-18.04

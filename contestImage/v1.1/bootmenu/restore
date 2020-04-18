@@ -1,0 +1,318 @@
+#!/bin/bash
+
+echo "==============================================================="
+
+# set variables
+inversvid="\0033[7m"
+resetvid="\0033[0m"
+crw=false
+lrw=false
+tdir=
+tfil=
+
+distr=$(grep -i ^ID= /etc/*release|sed s/.*ID=//)
+
+if [ "$distr" != "ubuntu" ]
+then
+ echo "$0 works only for Ubuntu and distros based on Ubuntu"
+ exit
+fi
+
+# check partitions that store persistent overlay data
+
+cnt=$(sudo blkid /dev/sd??|grep 'LABEL="casper-rw"'|wc -l)
+if [ $cnt -eq 1 ]
+then
+ crw=true
+elif [ $cnt -gt 1 ]
+then
+ echo "More than one casper-rw partition."
+ echo "Please remove/rename all but one for the restore to work!"
+ exit
+fi
+cnt=$(sudo blkid /dev/sd??|grep 'LABEL="live-rw"'|wc -l)
+if [ $cnt -eq 1 ]
+then
+ lrw=true
+elif [ $cnt -gt 1 ]
+then
+ echo "More than one live-rw partition."
+ echo "Please remove/rename all but one for the restore to work!"
+ exit
+fi
+
+#echo "crw=$crw; lrw=$lrw"
+
+if $crw && $lrw
+then
+ echo "Both casper-rw partition and live-rw partition."
+ read -p "Select casper-rw: c or live-rw: l (ell) " sel
+ if [ "$sel" == "c" ]
+ then
+  srw="casper-rw"
+  drw=$(sudo blkid /dev/sd??|grep 'LABEL="casper-rw"'|cut -d : -f 1)
+ elif [ "$sel" == "l" ]
+ then
+  srw="live-rw"
+  drw=$(sudo blkid /dev/sd??|grep 'LABEL="live-rw"'|cut -d : -f 1)
+ else
+  exit
+ fi
+elif ! $crw && ! $lrw
+then
+ echo "Neither a casper-rw nor a live-rw partition found"
+ exit
+elif $crw
+then
+ srw="casper-rw"
+ drw=$(sudo blkid /dev/sd??|grep 'LABEL="casper-rw"'|cut -d : -f 1)
+elif $lrw
+then
+ srw="live-rw"
+ drw=$(sudo blkid /dev/sd??|grep 'LABEL="live-rw"'|cut -d : -f 1)
+fi
+
+#echo "drw=$drw"
+sudo umount "$drw"
+sudo mount "$drw" /mnt
+
+rw0=$(df | grep -m 1 -e "$drw")
+rw=$(echo "$rw0"|tr -s ' ' ' '|sed 's#[^ ]* ##'|sed 's# [^ ]*$##')
+rt=$(df | grep /$|tr -s ' ' ' '|sed 's#[^ ]* ##'|sed 's# [^ ]*$##')
+#echo "rt=$rt"
+#echo "rw=$rw"
+
+if [ "$rt" == "$rw" ]
+then
+ echo "$0: You are running a persistent live session."
+ echo "Please reboot into a *live-only* session or from another drive!"
+ sudo umount "$drw"
+ exit
+elif [ "$rw" == "" ]
+then
+ echo "$0: Running in a *live-only* session or from another drive,"
+ echo "to restore overlayed persistent data, but no such data found."
+ sudo umount "$drw"
+ exit
+fi
+
+# set variables
+
+minrel=14.04
+tdir="${1%/*}"
+tfil="${1##*/}"
+user=$(whoami)
+curdir=$(pwd)
+
+# finding the default location to store the backup
+# and/or checking the specified location
+
+if [ "$tdir" != "" ]
+then
+ echo "$ ls \"$tdir\""
+ ls "$tdir"
+else
+ echo "$ ls"
+ ls
+fi
+if [ "$1" == "" ] || [ "$tfil" == "$1" ]
+then
+ drels=$(grep DISTRIB_RELEASE /etc/lsb-release|cut -d = -f 2)
+ drels=${drels//.}
+ if [ $? -ne 0 ] || [ $drels -lt ${minrel//.} ]
+ then
+  tdir="/media/usbdata"
+ else
+  tdir="/media/$USER/usbdata"
+ fi
+fi
+tdis="$tdir"
+tfis="$tfil"
+if [ "$tdir" == "" ]
+then
+ tdis="(use default)"
+fi
+if [ "$tfil" == "" ]
+then
+ tfis="(select automatically)"
+fi
+echo "---------------------------------------------------------------"
+
+#echo "Backup source:"
+#echo "directory=$tdis"
+#echo "file=$tfis"
+
+tbad=
+if ! test -d "$tdir"
+then
+ tbad="$tdir"
+ echo "$tdir: not a directory"
+fi
+if [ "$1" != "" ] && ! test -f "$1"
+then
+ if test -d "$1"
+ then
+  tbad="$tbad/$tfil"
+  echo "$1: a directory"
+ else
+  tbad="$tbad/$tfil"
+  echo "$tfil: not a file"
+ fi
+fi
+if [ "$tbad" != "/" ] && [ "$1" != "" ] && ! test -f "$1"
+then
+ echo "---------------------------------------------------------------"
+ echo "Backup source not found"
+ echo "directory=$tdir"
+ echo "file=$tfil"
+ echo "'$tdir/$tfil' not a file"
+ echo "---------------------------------------------------------------"
+ echo "$0: This script is made to run in a *live-only* session"
+ echo "in order to backup overlayed persistent data."
+ echo ""
+ echo "Usage:   $0 [source tarball with path]"
+ echo "         $0 [directory with source tarballs]"
+ echo ""
+ echo "Examples: $0"
+ echo "          $0 /media/$USER/data/1-casper-rw.tar.gz"
+ echo "          $0 /media/$USER/data"
+ echo ""
+ sudo umount "$drw"
+ exit
+fi
+
+# ask if the correct source file or directory is selected
+
+tuse="$tdir"/"$tfil"
+
+read -p "Do you want to restore from '$tuse'? (y/N) " ans
+if [ "$ans" != "y" ]
+then
+ sudo umount "$drw"
+ exit
+fi
+
+# unmount
+
+drw=${rw0/ *}
+sudo umount "$drw"
+
+# check/repair
+
+sudo e2fsck -f "$drw"
+
+# mount again
+
+sudo mount "$drw" /mnt
+
+# select tarball name automatically if a directory is specified
+
+#echo "srw=$srw###############"
+#echo "A:"
+#echo    "tdir=$tdir"
+#echo    "tfil=$tfil"
+#echo    "tuse=$tuse"
+
+if [ "$tdir" == "$tuse" ] || [ "${tdir}/" == "$tuse" ]
+then
+ cd "$tdir"
+ tarball=$(ls -1 *-$srw.tar.gz|sed "s/-$srw/ $srw/"|sort -nk1|tail -n1)
+ #echo "0: tarball=$tarball"
+ if [ "$tarball" != "" ]
+ then
+ # echo "1: tarball=$tarball"
+  tnum="${tarball/ *}"
+ # echo "1: tnum=$tnum"
+  tarball="${tarball/* }"
+ # tnum=$((tnum+1))  # no increment here, just use the latest and greatest
+ # echo "2: tnum=$tnum"
+  tarball="$tnum-$tarball"
+  tarball="$tdir/$tarball"
+
+#echo "B:"
+#echo "tdir=$tdir"
+#echo "tfil=$tfil"
+#echo "tuse=$tuse"
+#echo "tarball=$tarball"
+
+ else
+  echo "No tarball found automatically. Specify as parameter!"
+  echo "Example: $0 /media/$USER/data/1-casper-rw.tar.gz"
+  sudo umount "$drw"
+  cd "$curdir"
+  exit
+ fi
+else
+ tarball="$tdir/$tfil"
+fi
+echo "-----------------------------------------------------------------"
+echo "Restore from '$tarball'" 
+
+# make a tarball (restore) of the overlayed persistent data
+
+#echo "C: just before the question"
+#echo "tdir=$tdir"
+#echo "tfil=$tfil"
+#echo "tuse=$tuse"
+#echo "tarball=$tarball"
+
+cd /mnt
+echo "-----------------------------------------------------------------"
+/bin/echo -n "current directory: ";pwd
+echo "$ df ."
+df .
+echo "$ blkid $drw | cut -d ' ' -f 1,2,4-"
+blkid "$drw" | cut -d ' ' -f 1,2,4-
+echo "$ ls"
+ls
+echo "-----------------------------------------------------------------"
+read -p "Is this the correct directory to restore? (y/N) " ans
+if [ "$ans" != "y" ]
+then
+ cd
+ sudo umount "$drw"
+ cd "$curdir"
+ exit
+fi
+echo -e "$inversvid Final checkpoint $resetvid"
+read -p "Are you ready to go ahead? (g/N) " ans
+if [ "$ans" != "g" ]
+then
+ cd
+ sudo umount "$drw"
+ cd "$curdir"
+ exit
+fi
+
+
+
+echo "D: just before the tar command"
+echo "tdir=$tdir"
+echo "tfil=$tfil"
+echo "tuse=$tuse"
+echo "tarball=$tarball"
+
+sudo rm -r *
+sudo tar -xvzf "$tarball"
+
+# Confirm 'success or failure' and finish the task
+
+if [ $? -eq 0 ]
+then
+ echo "Restore from '$tarball' successful"
+else
+ echo "Restore from '$tarball' failed"
+fi
+
+cd
+if test -d "/media/$USER"
+then
+ mdia=$(sudo find "/mnt" -name media)
+ if test -d "$mdia/$USER"
+ then
+  sudo chown root:$USER "$mdia/$USER"
+ fi
+fi
+sudo umount "$drw"
+cd "$curdir"
+

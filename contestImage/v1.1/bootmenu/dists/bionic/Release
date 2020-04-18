@@ -1,0 +1,85 @@
+Origin: Ubuntu
+Label: Ubuntu
+Suite: bionic
+Version: 18.04
+Codename: bionic
+Date: Thu, 26 Apr 2018 23:37:48 UTC
+Architectures: amd64 i386
+Components: main restricted universe multiverse
+Description: Ubuntu Bionic 18.04
+Acquire-By-Hash: yes
+MD5Sum:
+ 4b3b0697086e339fc6e8fbdbc019ee03      101 restricted/binary-i386/Release
+ 4a4dd3598707603b3f76a2378a4504aa       20 restricted/binary-i386/Packages.gz
+ d41d8cd98f00b204e9800998ecf8427e        0 restricted/binary-i386/Packages
+ a12709d63502787fdcef753b54fd5507      102 restricted/binary-amd64/Release
+ a8697a282912e947bcabe2b169e1885a      812 restricted/binary-amd64/Packages.gz
+ 0ab255f4370f83261f471c6becab22f2     1966 restricted/binary-amd64/Packages
+ 321e1b9285cc79270d6309381eb0f668       99 universe/binary-i386/Release
+ 4a4dd3598707603b3f76a2378a4504aa       20 universe/binary-i386/Packages.gz
+ d41d8cd98f00b204e9800998ecf8427e        0 universe/binary-i386/Packages
+ 27f296238c48203f85e30c2250968a07      100 universe/binary-amd64/Release
+ 5720f12ff965cf820e563743a4819200     2713 universe/binary-amd64/Packages.gz
+ 8a27955900a4aedd3828d834edb4bd68     6754 universe/binary-amd64/Packages
+ eb66849ceb8c30d9ef731e84b5ad2120      101 multiverse/binary-i386/Release
+ 4a4dd3598707603b3f76a2378a4504aa       20 multiverse/binary-i386/Packages.gz
+ d41d8cd98f00b204e9800998ecf8427e        0 multiverse/binary-i386/Packages
+ 17cc1914363ff19b758158ec8fd24424      102 multiverse/binary-amd64/Release
+ e62ff0123a74adfc6903d59a449cbdb0       40 multiverse/binary-amd64/Packages.gz
+ d41d8cd98f00b204e9800998ecf8427e        0 multiverse/binary-amd64/Packages
+ 685bb70b73cb22ef2c5225637930e073       95 main/binary-i386/Release
+ 4a4dd3598707603b3f76a2378a4504aa       20 main/binary-i386/Packages.gz
+ d41d8cd98f00b204e9800998ecf8427e        0 main/binary-i386/Packages
+ 706fccb10e613153dc61a1b997685afc       96 main/binary-amd64/Release
+ c22c1a4ba572fc3d88723b71bab81b2a    16933 main/binary-amd64/Packages.gz
+ 6b28b034d0ed9ff610465eb2ee2e2fe3    54044 main/binary-amd64/Packages
+SHA1:
+ bfc0d0735ac7feb3aea1040054fb31f6e95a0641      101 restricted/binary-i386/Release
+ a0fddd5458378c1bf3c10dd2f5c060d1347741ed       20 restricted/binary-i386/Packages.gz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709        0 restricted/binary-i386/Packages
+ e60b975e41997ee2743d6a770bfef0bfbf07941a      102 restricted/binary-amd64/Release
+ 9bf55138eaf3ff6093eb26336369c06816c760dc      812 restricted/binary-amd64/Packages.gz
+ 358a1b93578a01a62da50a7e8f2048f00a5ef563     1966 restricted/binary-amd64/Packages
+ 4c8ad21fbf8899dd2738cef5368860648358d4ea       99 universe/binary-i386/Release
+ a0fddd5458378c1bf3c10dd2f5c060d1347741ed       20 universe/binary-i386/Packages.gz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709        0 universe/binary-i386/Packages
+ fbc13c4c210812e5f8df608d28d5c4fd4923615e      100 universe/binary-amd64/Release
+ b365ff60b85cca5feff22a594aa87ad544d19389     2713 universe/binary-amd64/Packages.gz
+ eb1be42cf4fac5cb3b722b6782a146e8cbf677ab     6754 universe/binary-amd64/Packages
+ 3b90c5631d3e9088449d8aa03b9649f09bb9a1f4      101 multiverse/binary-i386/Release
+ a0fddd5458378c1bf3c10dd2f5c060d1347741ed       20 multiverse/binary-i386/Packages.gz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709        0 multiverse/binary-i386/Packages
+ 1cc74fa25c39da13e9346d7f578211d441c2c82c      102 multiverse/binary-amd64/Release
+ e3f4c61a216c2c9613cd3bdd1420dde095b296b3       40 multiverse/binary-amd64/Packages.gz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709        0 multiverse/binary-amd64/Packages
+ 84c9cd57b08144335c6ccb3f6b4dcafaf83fcfd8       95 main/binary-i386/Release
+ a0fddd5458378c1bf3c10dd2f5c060d1347741ed       20 main/binary-i386/Packages.gz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709        0 main/binary-i386/Packages
+ 6fa21f44002c009abe4c161f3ba69b1ed9fced9c       96 main/binary-amd64/Release
+ 59d0dff0256391e3a9c1a259d5c8bd0d652cb4f4    16933 main/binary-amd64/Packages.gz
+ 036f9635fea658291673c43fd33a3b26a47f3a2d    54044 main/binary-amd64/Packages
+SHA256:
+ 7cc9b25600a859c8faa784dc728f89812e98efed980e3aced1d479ac608b97cc      101 restricted/binary-i386/Release
+ f61f27bd17de546264aa58f40f3aafaac7021e0ef69c17f6b1b4cd7664a037ec       20 restricted/binary-i386/Packages.gz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855        0 restricted/binary-i386/Packages
+ 5b8304e8a5292551f998034835188b506e7594f28a01ee11fefae8c23911f101      102 restricted/binary-amd64/Release
+ 1d92d0e4491bb628ee20ec17aeab78253e07eafa460e2c437ec756e9a697232c      812 restricted/binary-amd64/Packages.gz
+ 60ebb58d812960a67b7dc6fe3b10cfac6d9d277b5a309f2bc66cb32b7f26cbf8     1966 restricted/binary-amd64/Packages
+ 76c512f033e1a104f62243d7af6e4139d6bf3c3cae2aabc7ef1a0cdd15eae9d9       99 universe/binary-i386/Release
+ f61f27bd17de546264aa58f40f3aafaac7021e0ef69c17f6b1b4cd7664a037ec       20 universe/binary-i386/Packages.gz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855        0 universe/binary-i386/Packages
+ 295b19ca0c00af9658410f7181df29ccdc596c010565db397734a1df681ca966      100 universe/binary-amd64/Release
+ 2e73b1ae5fac84a9d95cc831da3e3154f41a6b4afe7c58c23bf4682f6d09bedb     2713 universe/binary-amd64/Packages.gz
+ f7b87178a0e82d0767a4901800a4489417e87ffd8ad99f732f4ff5e7e84a02f0     6754 universe/binary-amd64/Packages
+ 9dc5b41c6937044f2b8e971b6870434f13d3ffbe1839df4d74c440039f30248d      101 multiverse/binary-i386/Release
+ f61f27bd17de546264aa58f40f3aafaac7021e0ef69c17f6b1b4cd7664a037ec       20 multiverse/binary-i386/Packages.gz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855        0 multiverse/binary-i386/Packages
+ 7d33459093ddc0ccf0938b5a504e186a364740fd0375d9b74825c36d2d5d6de8      102 multiverse/binary-amd64/Release
+ e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4       40 multiverse/binary-amd64/Packages.gz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855        0 multiverse/binary-amd64/Packages
+ 31c11066c797feb03125e25e07e95be77a6a579b21413a711e5335ac409a45d9       95 main/binary-i386/Release
+ f61f27bd17de546264aa58f40f3aafaac7021e0ef69c17f6b1b4cd7664a037ec       20 main/binary-i386/Packages.gz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855        0 main/binary-i386/Packages
+ f7f13d78f7852b850f0a4afcc520128dcb51d4b24f07b33de3019fffc15e0771       96 main/binary-amd64/Release
+ 4c27d4f3336641715971543d223326e0d6a60fc467f25cbf8cac2d091b648d8f    16933 main/binary-amd64/Packages.gz
+ eefc3516cfa514a44d1d7549309de8a970e563cb06e4c8b3220742f209d62691    54044 main/binary-amd64/Packages
