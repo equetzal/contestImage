@@ -150,7 +150,7 @@ The algorithmic club or any of its members is not responsible for the use that a
 <p>This contribution of the algorithmic club to the competitive programming community is for educational purposes and healthy competition only, hoping that it will be useful to any user or entity that may obtain some benefit for its competitive community from it.</p>
 <p>The “huron” image and its variants, is property of the Algorithmic Club and it is registered for copyright, so the club reserves for itself all the rights of use of the huron image. The club allowed us to make use of their name and the huron character.</p>
 <h2 id="download-contestimage">Download contestImage</h2>
-<p><a href="https://correoipn-my.sharepoint.com/:u:/g/personal/egomezr1300_alumno_ipn_mx/EY1JnYoyuVtDt5OUB7r_xuEBgvqmEK4yyZMJQlApRibhbg?e=8RoUhL" target="_blank"> <img src="http://enya.codes/gitassets/huronOS/download_from_onedrive.png" width="50%"></a></p>
+<p><a href="https://bit.ly/contestImage" target="_blank"> <img src="http://enya.codes/gitassets/huronOS/download_from_onedrive.png" width="50%"></a></p>
 <p>Version: 1.1<br>
 Download Password: algoritmiaescom</p>
 <h3 id="instalation-guide">Instalation Guide</h3>
