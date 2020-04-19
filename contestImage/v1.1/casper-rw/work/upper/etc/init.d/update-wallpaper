@@ -1,0 +1,25 @@
+#!/bin/sh
+
+### BEGIN INIT INFO
+# Provides:          algoritmia-escom
+# Required-Start:    $all
+# Required-Stop:
+# Default-Start:     2 3 4 5
+# Default-Stop:
+# Short-Description: to update wallpaper to current club event
+### END INIT INFO
+
+cd /etc/
+wget -O wallpaper.png http://escom-ipn.hosting.acm.org/contestimage/wallpaper.png
+
+if [ $? -ne 0 ];
+	then
+		echo "wallpaper download failed"
+		su ubuntu-budgie -c 'gsettings set org.gnome.desktop.background picture-uri "file:///etc/default.png"'
+	else
+		echo "its downloaded"
+		su ubuntu-budgie -c 'gsettings set org.gnome.desktop.background picture-uri "file:///etc/wallpaper.png"'
+fi
+
+exit
+

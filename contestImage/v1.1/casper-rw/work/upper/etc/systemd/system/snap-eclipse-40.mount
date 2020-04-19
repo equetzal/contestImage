@@ -1,0 +1,12 @@
+[Unit]
+Description=Mount unit for eclipse, revision 40
+Before=snapd.service
+
+[Mount]
+What=/var/lib/snapd/snaps/eclipse_40.snap
+Where=/snap/eclipse/40
+Type=squashfs
+Options=nodev,ro,x-gdu.hide
+
+[Install]
+WantedBy=multi-user.target

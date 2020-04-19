@@ -1,0 +1,2 @@
+rm -f /var/lib/snapd/system-key
+systemctl restart snapd

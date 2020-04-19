@@ -1,0 +1,13 @@
+
+[Unit]
+Description=On internet connection it updates the wallpaper
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/etc/init.d/update-wallpaper
+
+[Install]
+WantedBy=multi-user.target

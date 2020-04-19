@@ -1,0 +1,15 @@
+#!/bin/sh
+
+### BEGIN INIT INFO
+# Provides:          algoritmia-escom
+# Required-Start:    $all
+# Required-Stop:
+# Default-Start:     2 3 4 5
+# Default-Stop:
+# Short-Description: to fix snap env for kotlin
+### END INIT INFO
+
+#rm -f /var/lib/snapd/system-key 
+#systemctl restart snapd
+apparmor_parser -r /var/lib/snapd/apparmor/profiles/
+cp /etc/hostscamp /etc/hosts

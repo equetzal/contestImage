@@ -1,0 +1,27 @@
+deb cdrom:[Ubuntu-Budgie 18.04.3 LTS _Bionic Beaver_ - Release amd64 (20190805)]/ bionic main multiverse restricted universe
+deb http://archive.ubuntu.com/ubuntu/ bionic main restricted universe
+deb http://security.ubuntu.com/ubuntu/ bionic-security main restricted universe
+deb http://archive.ubuntu.com/ubuntu/ bionic-updates main restricted universe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

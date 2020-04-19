@@ -1,0 +1,12 @@
+[Unit]
+Description=Mount unit for kotlin, revision 38
+Before=snapd.service
+
+[Mount]
+What=/var/lib/snapd/snaps/kotlin_38.snap
+Where=/snap/kotlin/38
+Type=squashfs
+Options=nodev,ro,x-gdu.hide
+
+[Install]
+WantedBy=multi-user.target

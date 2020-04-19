@@ -1,0 +1,23 @@
+[connection]
+id=Wi-Fi IPN 
+uuid=859f6f28-25a7-4b8c-98f5-462d86366088
+type=wifi
+permissions=user:ubuntu-budgie:;
+timestamp=1571694732
+
+[wifi]
+mac-address=68:07:15:EF:3F:3A
+mac-address-blacklist=
+mode=infrastructure
+seen-bssids=D8:84:66:8D:97:01;
+ssid=Wi-Fi IPN 
+
+[ipv4]
+dns-search=
+method=auto
+
+[ipv6]
+addr-gen-mode=stable-privacy
+dns-search=
+ip6-privacy=0
+method=auto

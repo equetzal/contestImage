@@ -1,0 +1,18 @@
+### BEGIN INIT INFO
+# Provides:          algoritmia-escom
+# Required-Start:    $all
+# Required-Stop:
+# Default-Start:     2 3 4 5
+# Default-Stop:
+# Short-Description: to fix snap env for kotlin
+### END INIT INFO
+
+[Unit]
+Description=Restore Access To snap Apps
+
+[Service]
+Type=oneshot
+ExecStart=/etc/init.d/snap-bugfix
+
+[Install]
+WantedBy=multi-user.target

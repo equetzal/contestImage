@@ -1,0 +1,29 @@
+# Subscription configuration file for CUPS v2.2.7
+# Written by cupsd
+NextSubscriptionId 108
+<Subscription 105>
+Events printer-changed
+Owner root
+LeaseDuration 86400
+Interval 60
+ExpirationTime 1578993739
+NextEventId 1
+</Subscription>
+<Subscription 106>
+Events all
+Owner anonymous
+Recipient dbus://
+LeaseDuration 86400
+Interval 0
+ExpirationTime 1578993739
+NextEventId 1
+</Subscription>
+<Subscription 107>
+Events printer-state-changed printer-restarted printer-shutdown printer-stopped printer-added printer-deleted job-state-changed job-created job-completed job-stopped
+Owner ubuntu-budgie
+Recipient dbus://
+LeaseDuration 3600
+Interval 0
+ExpirationTime 1578921442
+NextEventId 1
+</Subscription>
