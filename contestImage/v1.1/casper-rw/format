@@ -1,0 +1,2 @@
+# This records the union filesystem format used for this cow medium; do not delete or alter.
+UNIONFS=overlay
