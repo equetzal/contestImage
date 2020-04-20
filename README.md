@@ -141,9 +141,9 @@ Here we have some feature status:</p>
 <p>The project is supported <strong>by members</strong> of the <a href="https://www.facebook.com/algoritmiaescom/">ESCOM-IPN Algorithmic Club</a>, this project is currently is being lead by <a href="https://github.com/equetzal">Enya</a>.</p>
 <p>These members of the club are also envolved with this project:</p>
 <ul>
-<li><a href="https://github.com/soyoscarrh">Oscar RH</a> helps with the auto-upgradable scripts, custom wallpapes and blocked websites list.</li>
 <li><a href="https://github.com/Begv">Bryan Enrique</a> helps with the security of the system, to protect it from user modifications during a contest.</li>
 <li><a href="https://github.com/Begv">Norman Saucedo</a> helps with the snap enviroment to keep it working on persistence mode.</li>
+<li><a href="https://github.com/soyoscarrh">Oscar RH</a> helps with the auto-upgradable scripts, custom wallpapes and blocked websites list.</li>
 </ul>
 <h2 id="disclaimer">Disclaimer</h2>
 <p>This project is supported <strong>by members</strong> of the ESCOM algorithm club, however, no official instances (this includes the Superior School of Computer Sciences, the National Polytechnic Institute, as well as any competition organizations such as ICPC, IOI, etc.) are responsible for the use nor the development, security and vulnerabilities of the system of this project.<br>
