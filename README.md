@@ -143,6 +143,7 @@ Here we have some feature status:</p>
 <ul>
 <li><a href="https://github.com/soyoscarrh">Oscar RH</a> helps with the auto-upgradable scripts, custom wallpapes and blocked websites list.</li>
 <li><a href="https://github.com/Begv">Bryan Enrique</a> helps with the security of the system, to protect it from user modifications during a contest.</li>
+<li><a href="https://github.com/Begv">Norman Saucedo</a> helps with the snap enviroment to keep it working on persistence mode.</li>
 </ul>
 <h2 id="disclaimer">Disclaimer</h2>
 <p>This project is supported <strong>by members</strong> of the ESCOM algorithm club, however, no official instances (this includes the Superior School of Computer Sciences, the National Polytechnic Institute, as well as any competition organizations such as ICPC, IOI, etc.) are responsible for the use nor the development, security and vulnerabilities of the system of this project.<br>
