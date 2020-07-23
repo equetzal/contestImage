@@ -142,7 +142,7 @@ Here we have some feature status:</p>
 <p>These members of the club are also envolved with this project:</p>
 <ul>
 <li><a href="https://github.com/Begv">Bryan Enrique</a> helps with the security of the system, to protect it from user modifications during a contest.</li>
-<li><a href="https://github.com/Begv">Norman Saucedo</a> helps with the snap enviroment to keep it working on persistence mode.</li>
+<li><a href="https://github.com/norman-ipn">Norman Saucedo</a> helps with the snap enviroment to keep it working on persistence mode.</li>
 <li><a href="https://github.com/soyoscarrh">Oscar RH</a> helps with the auto-upgradable scripts, custom wallpapes and blocked websites list.</li>
 </ul>
 <h2 id="disclaimer">Disclaimer</h2>
